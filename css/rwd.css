@@ -14,5 +14,9 @@
 @media screen and (min-width: 1280px) {
 }
 
-/* 5. laptop 1921~ */
+/* 5. pc 1600px부터~ */
+@media screen and (min-width: 1600px) {
+}
+
+/* 6. laptop 1921~ */
 @media screen and (min-width: 1921px) {}

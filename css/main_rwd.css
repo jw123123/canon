@@ -3,19 +3,17 @@
 
 /* 1. mo */
 @media screen and (max-width: 767px) {
-  .new-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-top: 75%;
-  }
+
 
   .etc-container {
     height: 100%;
     max-width: 480px;
     margin: 0 auto;
   }
+
+  .service-item a:hover ul {
+  color: var(--point-color);
+}
 }
 
 /* 2. tb~ */
@@ -39,7 +37,47 @@
   .hero-video {}
 
   /* 신제품영역 */
+  .new-item-list div:first-child {
+  width: 65%;
+}
+  .new-img { 
+     padding-top: 4em;
+    height: 400px;
+  }
+  .new-img img {
+    border-radius: 20px;
 
+  }
+.new-content {
+  font-size: 1.3em;
+}
+
+.new-pagination {
+  position: absolute;
+  top: 30%;
+  right: 2%;
+  display: flex;
+  gap: 1em;
+  padding: 0;
+  font-size: 1em;
+  z-index: 1;
+  font-weight: 500;
+}
+.new-pagination a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.new-pagination>.active>a {
+  color: var(--point-color);
+  border-bottom: 2px solid var(--point-color);
+  font-size: 1.1em;
+}
+
+.new-pagination a {
+}
+
+.new-pagination a:after {
+}
 
 
   /* 제품영역 */
@@ -94,75 +132,80 @@
 
 
   /* 서비스 영역 */
-  .service-list {
-    display: flex;
+  
+  .service-container{
+  /* height: 50vh; */
+  padding-top: 2em;
+}
+
+.service-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
     width: 100%;
+    height: 100%;
   }
-
+  
   .service-item {
-    padding: 0;
-    width: 25%;
+    width: 45%;
+    padding: 10px 0 30px;
+    /* height: 300px; */
     border-bottom: none;
-  }
-
-  .service-item a {
-    position: relative;
-    display: block;
-    padding-top: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     transition: 0.5s;
   }
 
-  .service-item a:hover {
-    background-color: #ce000a;
+  .service-item a {
+    transition: 0.5s;
+    height: 100%;
   }
-
+  
+  .service-item:hover {
+transform: scale(1.05);
+transition: 0.5s;
+  }
+  
   .service-item a:after {
     /* 애니메이션 라인 */
     display: none;
   }
-
+  
   .service-item a:hover ul {
-    color: #fff;
+    
   }
-
+  
   .service-item ul {
-    position: absolute;
-    left: 50%;
-    top: 50%;
     display: flex;
+    flex-direction: column;
     gap: 0;
     align-items: center;
-    font-size: 1.2em;
-    transform: translate(-50%, -60%);
-    white-space: nowrap;
-    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 700;
+    white-space: wrap;
   }
 
   .service-item a ul:before {
-    font-size: 4em;
-    height: 100px;
+    font-size: 2.4em;
   }
 
   .service-contents {
-    display: none;
+    font-size: 16px;
+    /* display: none; */
   }
 
-  .search,
-  .support,
-  .registration {
-    border-right: 2px solid #000;
-  }
+
 
 }
 
 /* 3. only tb */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .new-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-top: 56.25%;
+
   }
 
   .etc-container {
@@ -197,34 +240,35 @@
   }
 
   .hero-video {
-    position: static;
+
+
   }
 
   /* 신제품영역 */
   .myswiper {
-    height: 650px;
-    width: 60%;
-    margin-left: 0;
   }
 
-  .swiper-wrapper {}
+.new-item-list div:first-child {
+  width: 50%;
+}
+
+    .new-img { 
+
+    height: 500px;
+
+  }
 
   .new-img img {}
+.new-pagination {
 
-  .new-list {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-    font-size: 1.7em;
-    z-index: 1;
-  }
+  top: 25%;
 
-  .new-list li {
-    padding: 0 1em;
-  }
+}
+.new-pagination {
+
+  gap: 2em;
+
+}
 
 
 
@@ -334,7 +378,6 @@
     font-size: 32px;
     font-weight: 500;
     white-space: wrap;
-    word-break: keep-all;
   }
 
 
@@ -392,7 +435,8 @@
     gap: 1em;
     padding: 20px;
     text-align: center;
-    z-index: 3;
+    color: var(--primary-color);
+    text-shadow: none;
   }
 
   .com-btn:before {
@@ -422,6 +466,13 @@
     height: inherit;
 
   }
+
+  .service-list {
+
+  justify-content: space-between;
+
+  }
+
 }
 
 /* 5. laptop 1921~ */

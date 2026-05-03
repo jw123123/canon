@@ -2,7 +2,7 @@ $(function () {
   const body = $('body')
   let swiper;
 
-  // if(body.hasClass('pc')) {
+  if(!body.hasClass('mo')) {
   swiper = new Swiper(".worth-container", {
     direction: "vertical",
     slidesPerView: 1,
@@ -14,5 +14,5 @@ $(function () {
     observer: true,
     observeParents: true,
   });
-  // }
+  }
 });

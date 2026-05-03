@@ -21,46 +21,24 @@ $(function () {
 
   //  반응형 구현
   rwd();
-  // 창의 크기가 조절되면
   $(window).resize(function () {
     rwd();
   });
-
-  // 2. 실행될 스크립트 작성
-  // GNB (타겟,이벤트,함수)
-  // $(mainMenu).mouseenter(function () {
-  //   $(this).find(subMenu).stop().slideDown();
-  //   // 메서드 안에는 선택자만 들어가야함
-  // });
-  // $(mainMenu).mouseleave(function () {
-  //   $(this).find(subMenu).stop().slideUp();
-  //   // 메서드 안에는 선택자만 들어가야함
-  // });
 
 
 // 서브메뉴 오픈
   $(mainMenu).mouseenter(function () {
     $(this).find(subMenu).show();
-    // $(this).addClass("sub-on");
   });
   $(mainMenu).mouseleave(function () {
     $(this).find(subMenu).hide();
-    // $(this).removeClass("sub-on");
   });
 
-  // $(depth2).hover(function () {
-  //   $(depth3).removeClass("show");
-  //   $(this).next().addClass("show");
-  // });
-  // $(mainMenu).hover(function () {
-  //   $(depth3).removeClass("show");
-  // });
 
   // 카테고리 hover시 컬러 변경
   $(mainMenu).mouseenter(function () {
     $(mainMenu).find(">a").removeClass("point");
     $(this).find(">a").addClass("point");
-    // $(this).addClass("point");
   });
 
   $(mainMenu).mouseleave(function () {
@@ -68,50 +46,10 @@ $(function () {
     $(depth2).removeClass("hover_line");
   });
 
-  // $(depth2).mouseenter(function () {
-  //   $(depth2).removeClass("hover_line");
-  //   $(this).addClass("hover_line");
-  // });
-
   // 푸터 패밀리사이트 오픈
   $(fsBtn).click(function () {
     $(fsList).toggle();
   });
-
-
-  // 3. 애니메이션
-
-  // css수정 : 노드를 변경해서 노드 자체 style로 들어감
-  // $(siteMapBtn).click(function () {
-  //   $(siteMap).css("right", "0");
-  // });
-  // $(closeBtn).click(function () {
-  //   $(siteMap).css("right", "-100%");
-  // });
-
-  // 애니메이트
-  // $(siteMapBtn).click(function () {
-  //   $(siteMap).animate({
-  //     "right": "0",
-  //     "opacity": "1"
-  //     // ""문자로 묶지 않으면 변수로 알아들음
-  //   }, 500);
-  // });
-  // $(closeBtn).click(function () {
-  //   $(siteMap).animate({
-  //     "right": "-100%",
-  //     "opacity": "0"
-  //   }, 500);
-  // });
-
-  // $(siteMapBtn).click(function () {
-  //   $(body).addClass("fixed ");
-  //   $(siteMap).addClass("on");
-  // });
-  // $(closeBtn).click(function () {
-  //   $(body).removeClass("fixed");
-  //   $(siteMap).removeClass("on");
-  // });
 
 
 

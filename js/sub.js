@@ -1,10 +1,11 @@
 $(function () {
   const body = $("body");
   const subH2 = $(".sub-hd-lnb h2");
-  const lnbBtn = $(".cv-lnb-btn");
+  const lnbBtn = $(".canon-lnb-btn");
   const subBg = $(".sub-hd-lnb");
-  let lnb = $(".depth2-list");
   let pageTitle = "Consumer,Business,Event,Service,Support,Company";
+  let lnb = $(".depth2-list");
+  let lnbDepth3 = $(".sub-depth3");
   pageTitle = pageTitle.split(",");
   let bodyNum, mainNum, subNum;
   bodyNum = body.attr("class");
@@ -33,9 +34,7 @@ $(function () {
   // 활성화되는 서브메뉴
   subEl.addClass("active");
 
-  if (subEl.hasClass("active")) {
-    subEl.find(".sub-depth3").addClass("active");
-  }
+
 
 
   // 모바일 LNB Label 입력

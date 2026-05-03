@@ -2,7 +2,7 @@
 
 /* 공용클래스 */
 #canon-main {
-  padding-top: 49px;
+  padding-top: 64px;
   /*모바일 헤더 높이*/
 }
 
@@ -38,7 +38,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   /* 빈 곳 없이 꽉꽉 채우게 하기(선택 아닌 필수)*/
   /* 
   절대로 짤려 나가지 말아야하면 contain
@@ -53,7 +53,7 @@
 }
 
 .new-wrap {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .new-wrap h2 {
@@ -66,6 +66,7 @@
 }
 
 .myswiper {
+  position: relative;
   width: 100%;
   height: 100%;
 }
@@ -73,63 +74,47 @@
 .new-items {}
 .new-item-list{
 }
-.new-item-list div {
-  width: 80%;
+.new-item-list div:first-child {
+  width: 95%;
 }
 .new-title {
-  font-size: 2em;
+  font-size: 1.8em;
 font-weight: 700;
-padding-bottom: 0.5em;
+padding-bottom: 5px;
 }
 .new-content {
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 .new-img {
   width: 100%;
   height: 100%;
-  /* padding-top: 75%; */
+padding-top: 2em;
 }
 
 .new-img img {
-  /* position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  display: block; */
-  object-fit: contain;
+  object-fit: cover;
   object-position: center center;
 }
 
-.new-list {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin: auto;
-  font-size: 1em;
-  z-index: 1;
+.new-pagination{
+  text-align: center;
+  padding-top: 0.5em;
+  
 }
-
-.new-list>.active>a {
+.new-pagination li:hover > a{
   color: var(--point-color);
-  border-bottom: 2px solid var(--point-color);
+}
+.swiper-pagination-bullet-active{
+  background: var(--point-color);
+  width: 50px;
+  border-radius: 30px;
 }
 
-.new-list a {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #000;
-}
 
-.new-list a:after {
-  content: '\e315';
-  font-size: 1.5em;
-  font-family: var(--google-icon);
-}
+
 
 /* 추천 영역 */
 .main-section-recommend {}
@@ -411,6 +396,8 @@ padding-bottom: 0.5em;
   height: 100%;
   align-items: center;
   padding-top: 2em;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .com-btn dt {
@@ -469,9 +456,7 @@ padding-bottom: 0.5em;
   width: 100%;
 }
 
-.service-item a:hover ul {
-  color: var(--point-color);
-}
+
 
 .service-item ul {
   display: flex;
@@ -485,6 +470,7 @@ padding-bottom: 0.5em;
 
 .service-item a ul:before {
   font-size: 2.5em;
+  font-weight: 200;
 }
 
 .search a ul:before {

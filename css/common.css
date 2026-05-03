@@ -36,6 +36,7 @@ body {
   color: #1A1311;
   line-height: 1.5;
   background-color: #f8f8f8;
+  word-break: keep-all;
 }
 
 body.fixed {
