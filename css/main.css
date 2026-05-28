@@ -438,7 +438,10 @@ padding-top: 2em;
   width: 100%;
 }
 
-
+  .service-item:hover {
+transform: scale(1.02);
+transition: 0.3s;
+  }
 
 .service-item ul {
   display: flex;
@@ -453,6 +456,9 @@ padding-top: 2em;
 .service-item a ul:before {
   font-size: 2.5em;
   font-weight: 200;
+}
+  .service-item a:hover ul {
+  color: var(--point-color);
 }
 
 .search a ul:before {
@@ -478,7 +484,6 @@ padding-top: 2em;
 .service-contents {
   font-size: 0.8em;
   font-weight: normal;
-  padding-top: 3px;
 }
 
 .search,

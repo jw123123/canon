@@ -1,5 +1,9 @@
 @charset 'utf-8';
 
+.sub-hd-lnb h2{
+  color: #fff;
+}
+
 #company-main{
   background: url(../images/banner_bg.png) center / cover no-repeat;
   background-attachment: fixed;
@@ -10,10 +14,12 @@
 }
 
 /* 슬로건 영역 */
-.sub-section-banner{}
+.sub-section-banner{
+  padding-bottom: 0px;
+}
 
 .banner-wrap{
-  height: 30vh;
+  height: 50vh;
 }
 .banner-container{
   position: relative;
@@ -25,7 +31,7 @@
   top: 50%;
   width: 100%;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.8em;
   font-weight: 800;
 transform: translate(-50%, -50%);
 }
@@ -33,25 +39,25 @@ transform: translate(-50%, -50%);
 /* 브랜드가치 영역 */
 .sub-section-worth {
   position: relative;
-  height: 300vh;
+  height: 100vh;
   padding: 0;
 }
 .worth-wrap {
   position: sticky;
       top: 0;
-    height: 100vh;
+    height: 100%;
 }
 .worth-container {
   height: 100%;
 }
 .worth {
-  height: 100%;
+  height: calc(100vh / 3);
+  flex-direction: column;
 }
 .worth-slider {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1em;
   height: 100%;
   padding: 0 6px;
   background-position: center center;
@@ -63,22 +69,23 @@ transform: translate(-50%, -50%);
 .value {background-image: url(../images/company_value.png);}
 .point-txt {
   color: var(--point-color);
+  font-weight: 900;
 }
 .worth-title {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.3em;
   color: #fff;
-  font-size: 3em;
+  font-size: 1.8em;
   font-weight: 900;
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .worth-content {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
+  display: none;
 }
 .worth-content ul {
-  display: flex;
 }
 .worth-content li:before {
   content: ' : ';
@@ -86,11 +93,9 @@ transform: translate(-50%, -50%);
 
 /* 주요활동 영역 */
 .sub-section-activity {
-  height: 100vh;
 }
 .activity-wrap {
   padding-top: 100px;
-  padding-bottom: 100px;
   height: 100%;
 }
 .activity-container {
@@ -112,8 +117,11 @@ transform: translate(-50%, -50%);
   padding-top: 1em;
 }
 .activity-card {
+  display: flex;
+  align-items: flex-end;
   width: 100%;
   height: 200px;
+  padding-left: 0.5em;
   background-color: #ddd;
   background-position: center center;
   background-repeat: no-repeat;
@@ -129,7 +137,7 @@ transform: translate(-50%, -50%);
 }
 .social {
   flex: 1;
-  background-image: url(../images/social_bg.jpg);
+  background-image: url(../images/social_img.jpg);
   
 }
 .governance {
@@ -138,13 +146,65 @@ transform: translate(-50%, -50%);
 }
 .fair {
   flex: 1;
+  background-image: url(../images/fair_bg.jpg);
 }
-.activity-card span {}
+.activity-card span {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
 
+/* 위치안내 */
+.map-wrap {
+  position: relative;
+  padding-top: 5em;
+}
+
+.map-container {}
+.root_daum_roughmap_landing{
+  padding-bottom: 3em;
+}
+.cont{
+  display: none;
+}
+.map-info {
+}
+.map-info h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2.5em;
+  padding-bottom: 0.5em;
+}
+.map-info dl {display: flex; padding-bottom: 10px;}
+.map-info dt {
+  font-size: 1.1em; 
+  font-weight: 700;
+  white-space: nowrap;
+}
+.map-info dt::after {
+  content: ' : ';
+}
+.map-info dd {
+  font-size: 1em;
+  padding-left: 0.5em;
+}
 
 /* 반응형 */
 /* 1. mo */
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+  .root_daum_roughmap_landing{
+
+  width: 100% !important;
+  
+}
+.root_daum_roughmap .wrap_map{
+  height: 300px !important;
+
+}
+
+}
 
 /* 2. tb~ */
 @media screen and (min-width: 768px) {
@@ -159,17 +219,56 @@ transform: translate(-50%, -50%);
   height: 100%;
 }
 .banner-txt{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  font-size: 56px;
-  font-weight: 800;
-transform: translate(-50%, -50%);
+  font-size: 2.8em;
+}
+
+/* 브랜드가치 영역 */
+.sub-section-worth {
+  height: 240vh;
+  padding: 0;
+}
+.worth {
+  height: calc(240vh / 3);
+  flex-direction: column;
+}
+
+.worth-slider {
+
+  padding: 0 25px;
+
+}
+.point-txt{
+  font-size: 1.4em;
+}
+.worth-title {
+
+  font-size: 2.8em;
+
+}
+.worth-content {
+
+  font-size: 24px;
+  display: block;
+}
+
+.worth-content ul {
+  display: flex;
+  font-size: 16px;
+}
+.worth-content ul:first-child {
+  padding-top: 1em;
 }
 
   /* 주요활동 영역 */
+.sub-section-activity {
+height: 100vh;
+}
+.activity-wrap {
+
+  padding-top: 200px;
+
+}
+
 .activity-container {
   display: flex;
   gap: 2em;
@@ -192,12 +291,9 @@ transform: translate(-50%, -50%);
   padding-top: 1em;
 }
 .activity-card {
-  width: 100%;
   height: 100%;
-  background-color: #ddd;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding-left: 0.8em;
+  padding-bottom: 0.3em;
 }
 .esg {
   flex: 1;
@@ -215,10 +311,47 @@ transform: translate(-50%, -50%);
 .fair {
   flex: 1;
 }
+.activity-card span {
+
+  font-size: 2.4em;
+
+  font-weight: 600;
+
+}
+
+/* 위치안내 */
+
+.map-container {
+  display: flex;
+  gap: 3em;
+  align-items: center;
+}
+.map-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+width: 50%;
+height: 510px;
+}
+.map-info dt {
+  font-size: 1.5em; 
+}
+
+.map-info dd {
+  font-size: 1.3em;
+}
+
 }
 
 /* 3. only tb */
-@media screen and (min-width: 768px) and (max-width: 1279px) {}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .root_daum_roughmap_landing{
+
+  width: 700px !important;
+
+}
+}
 
 /* 4. laptop 1280~ */
 @media screen and (min-width: 1280px) {
@@ -226,12 +359,55 @@ transform: translate(-50%, -50%);
 background-position: bottom center;
 }
 
+/* 슬로건 영역 */
+.banner-txt{
+  font-size: 4em;
+}
 
+/* 브랜드가치 영역 */
+.sub-section-worth {
+  height: 300vh;
+}
   .worth-slider {
 
   padding: 0 105px;
 
 }
+.worth-wrap {
+
+    height: 100vh;
+
+}
+
+.worth {
+  height: 100%;
+  flex-direction: row;
+}
+.worth-slider {}
+
+.point-txt {
+font-size: 1.5em;
+  font-weight: 900;
+}
+
+.worth-title {
+gap: 0.3em;
+  font-size: 4em;
+
+  font-weight: 900;
+
+}
+.worth-content {
+
+  font-size: 28px;
+
+  font-weight: 500;
+
+}
+.worth-content ul {
+font-size: 24px;
+}
+
 
 /* 주요활동 영역 */
 .activity-container {
@@ -240,6 +416,11 @@ background-position: bottom center;
   height: 100%;
 
 }
+
+.activity-wrap {
+
+
+}
 .card-wrap1 {
   flex: 3;
 }
@@ -273,7 +454,32 @@ background-position: bottom center;
   flex: 1;
 }
 
+/* 위치안내 영역 */
+.map-wrap {
 
+  padding-bottom: 8em;
+
+}
+
+.map-info {
+
+width: 40%;
+
+}
+
+.map-info h3 {
+
+  font-size: 3em;
+
+}
+
+.map-info dt {
+  font-size: 1.7em; 
+}
+
+.map-info dd {
+  font-size: 1.4em;
+}
 
 }
 
