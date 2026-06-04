@@ -84,8 +84,7 @@ button {
 
 /* 공용클래스 */
 .wrap {
-  max-width: 1900px;
-  /* pc 때문에 넣어놓은 것*/
+  max-width: 1920px;
   padding: 0 6px;
   margin: 0 auto;
 }
@@ -96,18 +95,9 @@ button {
 }
 
 .clearfix:after {
-  /* 
-  1. 가로 나열을 float을 이용해 하는 경우 부모의 높이가 '0' 
-  :after를 생성해서 끄트머리에 배치
-  */
   content: '';
   display: block;
   clear: both;
-  /* 양 쪽 다 비우라는 문법(아무것도 없는 빈줄에 생성하라는 의미) */
-  /* 
-  2. float으로 가로 나열한 자식을 가지고 있는 부모 영역에 overflow:auto를 설계하면 높이 문제를 해결(일부 IE는 안됨)
-  clearfix 필요 없음
-  */
 }
 
 .google-icon {
@@ -128,6 +118,7 @@ button {
 .point a {
   color: var(--point-color);
 }
+
 
 /* 헤더 */
 #canon-hd {
@@ -293,7 +284,10 @@ button {
 
 
 /* 푸터 */
-#canon-ft {}
+#canon-ft {
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+}
 
 .ft-container {
   position: relative;
@@ -301,7 +295,6 @@ button {
   padding-bottom: 1em;
   font-size: 0.8em;
   color: rgba(26, 19, 17, 0.5);
-  background-color: #fff;
 }
 
 .ft-logo {
@@ -454,7 +447,6 @@ button {
 
 /* 모바일 gnb, pc사이트맵 */
 .mo-gnb-sitemap {
-  /* display: none; */
   position: fixed;
   top: 0;
   right: -100%;
@@ -474,7 +466,6 @@ button {
 .mo-gnb-top {
   display: flex;
   justify-content: space-between;
-  /* padding-right: 24px; */
 }
 
 .mo-login-btn {
@@ -536,9 +527,6 @@ button {
   transition: 0.3s;
 }
 
-/* .mo-depth1 > a:hover, .mo-depth1 > a:active {
-  text-decoration: underline;
-  } */
 .mo-depth2-wrap {
   display: none;
   padding: 20px;
@@ -560,9 +548,6 @@ button {
   transition: var(--speed);
 }
 
-/* .mo-depth2 > li:hover > a, .mo-depth2 > li:active > a {
-  font-weight: 700;
-  } */
   .mo-depth3 {
     display: none;
   }
