@@ -35,7 +35,6 @@ body {
   font-family: var(--primary-font);
   color: #1A1311;
   line-height: 1.5;
-  background-color: #f8f8f8;
   word-break: keep-all;
 }
 
@@ -119,6 +118,9 @@ button {
   color: var(--point-color);
 }
 
+.h2 {
+  font-size: 48px;
+}
 
 /* 헤더 */
 #canon-hd {

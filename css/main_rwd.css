@@ -11,9 +11,7 @@
     margin: 0 auto;
   }
 
-  .service-item a:hover ul {
-  color: var(--point-color);
-}
+
 }
 
 /* 2. tb~ */
@@ -157,7 +155,6 @@
   .service-item {
     width: 45%;
     padding: 10px 0 30px;
-    /* height: 300px; */
     border-bottom: none;
     border-radius: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -490,13 +487,19 @@ flex-wrap: nowrap;
 
 .service-item {
   width: 25%;
+  height: 300px;
+  padding: 30px 20px;
+
 }
+  .service-item ul {
+  font-size: 1.8em;
+  }
+  .service-contents {
 
-
-  .service-item a ul:before {
-    /* font-size: 5em; */
+    font-size: 20px;
 
   }
+
 
 }
 /* 5. pc 1600px부터~ */

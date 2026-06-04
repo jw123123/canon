@@ -1,5 +1,10 @@
 @charset 'UTF-8';
 
+/* 공용 클래스 */
+.sub-section{
+    padding-bottom: 100px;
+}
+
 /* 헤더 고정 */
 #cv-hd.fixed {
     background-color: #fff;
@@ -116,11 +121,6 @@
 }
 
 
-.sub-sec h2 {
-    font-size: 1.5em;
-    color: var(--dark-gray);
-}
-
 /* 반응형 */
 
 /* 1. mo ~767px까지 */
@@ -215,9 +215,6 @@
     }
 
 
-    .sub-sec h2 {
-        font-size: 1.8em;
-    }
 }
 
 /* 3. only tb 768px ~ 1279px */
@@ -248,9 +245,6 @@
 
     }
 
-    .sub-sec h2 {
-        font-size: 2.4em;
-    }
 
     .depth2-list a {
         font-size: 1.2em;
