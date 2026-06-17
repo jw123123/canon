@@ -45,7 +45,6 @@
 
 ```
 canon
-├── .vscode
 ├── css
 │   ├── common.css
 │   ├── common_rwd.css
