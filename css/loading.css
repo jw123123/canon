@@ -1,0 +1,434 @@
+@charset "utf-8";
+
+.coming-wrap {
+  padding-top: 64px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.coming-page {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+  overflow: hidden;
+}
+
+.coming-inner {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.viewfinder-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  border: 1px solid rgba(220, 0, 12, 0.35);
+  background:
+    linear-gradient(rgba(220, 0, 12, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(220, 0, 12, 0.05) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+.viewfinder-box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(220, 0, 12, 0.16);
+}
+
+.viewfinder-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(220, 0, 12, 0.16);
+}
+
+.corner {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  border-color: #dc000c;
+  border-style: solid;
+}
+
+.corner-left-top {
+  top: 2rem;
+  left: 2rem;
+  border-width: 4px 0 0 4px;
+}
+
+.corner-right-top {
+  top: 2rem;
+  right: 2rem;
+  border-width: 4px 4px 0 0;
+}
+
+.corner-left-bottom {
+  bottom: 2rem;
+  left: 2rem;
+  border-width: 0 0 4px 4px;
+}
+
+.corner-right-bottom {
+  right: 2rem;
+  bottom: 2rem;
+  border-width: 0 4px 4px 0;
+}
+
+.focus-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15rem;
+  height: 10rem;
+  border: 2px solid #dc000c;
+  transform: translate(-50%, -50%);
+  animation: focusPulse 2.4s ease-in-out infinite;
+}
+
+.rec-dot {
+  position: absolute;
+  top: 3.3rem;
+  right: 5.8rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #dc000c;
+  animation: recBlink 1.2s steps(2, start) infinite;
+}
+
+.rec-text {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  color: #dc000c;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.coming-content {
+  position: relative;
+  max-width: 760px;
+  text-align: center;
+  z-index: 2;
+}
+
+.sub-title {
+  display: inline-flex;
+  margin-bottom: 2.4rem;
+  color: #dc000c;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.coming-content h1,
+.minimal-inner h1 {
+  color: #111;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.06em;
+}
+
+.coming-content p,
+.minimal-inner p {
+  margin-top: 2.8rem;
+  color: #555;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: -0.03em;
+}
+
+.btn-group {
+  margin-top: 3rem;
+}
+
+.home-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 10rem;
+  height: 4rem;
+  padding: 0 3rem;
+  border: 1px solid #dc000c;
+  border-radius: 999px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+.home-btn {
+  color: #fff;
+  background-color: #dc000c;
+}
+
+.home-btn:hover {
+  transform: translateY(-4px);
+}
+
+
+@keyframes focusPulse {
+  0%, 100% {
+    opacity: 0.55;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+}
+
+@keyframes recBlink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes rotateAperture {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .coming-page {
+    min-height: 100svh;
+    padding: 2.4rem 2rem;
+  }
+
+  .coming-header {
+    position: relative;
+    margin-bottom: 5rem;
+  }
+
+  .canon-logo {
+    font-size: 4.4rem;
+  }
+
+  .page-label {
+    display: none;
+  }
+
+  .viewfinder-box {
+    height: auto;
+    min-height: calc(100svh - 4.8rem);
+    padding: 6rem 2rem;
+  }
+
+  .corner {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .focus-box {
+    width: 18rem;
+    height: 12rem;
+  }
+
+  .rec-dot {
+    top: 2.8rem;
+    right: 7.4rem;
+  }
+
+  .rec-text {
+    top: 2.3rem;
+    right: 2.4rem;
+    font-size: 1.5rem;
+  }
+
+  .sub-title {
+    margin-bottom: 1.6rem;
+    font-size: 1.2rem;
+  }
+
+  .coming-content h1,
+  .minimal-inner h1 {
+    font-size: 3.8rem;
+  }
+
+  .coming-content p,
+  .minimal-inner p {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    margin-top: 3.6rem;
+  }
+
+  .home-btn {
+    width: 100%;
+    height: 5.4rem;
+  }
+
+  .aperture-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    gap: 5rem;
+  }
+
+  .aperture-visual {
+    width: 28rem;
+    height: 28rem;
+  }
+
+  .aperture-visual::before {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .aperture-visual::after {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .aperture-visual span {
+    width: 12rem;
+    height: 5rem;
+  }
+
+  .align-left {
+    text-align: center;
+  }
+
+  .align-left .btn-group {
+    justify-content: center;
+  }
+
+  .minimal-line {
+    top: 8rem;
+    width: calc(100% - 4rem);
+  }
+
+  .large-logo {
+    margin-bottom: 5rem;
+    font-size: 6.4rem;
+  }
+}
+
+/* 4. laptop 1280~ */
+@media screen and (min-width: 1280px) {
+  .coming-wrap {
+  padding-top: 100px;
+}
+
+  .coming-page {
+
+  min-height: 100vh;
+
+}
+
+  .coming-content h1,
+.minimal-inner h1 {
+  font-size: 6rem;
+}
+  .coming-page {
+    padding: 4rem;
+  }
+
+  .viewfinder-box {
+      height: calc(100vh - 12rem);
+    min-height: 680px;
+  }
+  .corner {
+
+  width: 9rem;
+
+  height: 9rem;
+
+}
+
+
+  .corner-left-top {
+  top: 4rem;
+  left: 4rem;
+  border-width: 4px 0 0 4px;
+}
+
+.corner-right-top {
+  top: 4rem;
+  right: 4rem;
+  border-width: 4px 4px 0 0;
+}
+
+.corner-left-bottom {
+  bottom: 4rem;
+  left: 4rem;
+  border-width: 0 0 4px 4px;
+}
+
+.corner-right-bottom {
+  right: 4rem;
+  bottom: 4rem;
+  border-width: 0 4px 4px 0;
+}
+
+.rec-dot {
+  position: absolute;
+  top: 5.2rem;
+  right: 11rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: #dc000c;
+  animation: recBlink 1.2s steps(2, start) infinite;
+}
+
+.rec-text {
+  position: absolute;
+  top: 4.7rem;
+  right: 5.2rem;
+  color: #dc000c;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  letter-spacing: 0.18em;
+
+}
+
+
+  .coming-content p,
+.minimal-inner p {
+  font-size: 2rem;
+}
+
+.btn-group {
+  margin-top: 4.8rem;
+}
+
+.home-btn {
+  min-width: 18rem;
+  height: 5.8rem;
+  padding: 0 3rem;
+  font-size: 1.6rem;
+}
+}

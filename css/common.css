@@ -3,8 +3,8 @@
 
 /* 리셋 */
 :root {
-  --primary-font: 'Roboto', 'Pretendard Variable', sans-serif;
-  --secondary-font: 'Inter', sans-serif;
+  --primary-font: 'Pretendard Variable', sans-serif;
+  --secondary-font: 'Roboto', sans-serif;
   --serif-font: 'Nanum Myeongjo', serif;
   --primary-color: #1A1311;
   --point-color: #dc000c;
@@ -30,7 +30,6 @@ html {
 }
 
 body {
-  /* 배경색, 글자(색생, 글꼴, 사이즈, 줄간격) */
   font-size: 16px;
   font-family: var(--primary-font);
   color: #1A1311;
@@ -39,7 +38,6 @@ body {
 }
 
 body.fixed {
-  /* 문서를 덮는 모달창이 등장했을 때 아래쪽 문서의 내용이 스크롤 되면 안 됨 */
   overflow: hidden;
   position: fixed;
 }
@@ -63,7 +61,6 @@ iframe {
 table {
   width: 100%;
   border-collapse: collapse;
-  /* 테이블 내 보더가 이중으로 생기는 것을 막음 */
 }
 
 input,
@@ -83,7 +80,7 @@ button {
 
 /* 공용클래스 */
 .wrap {
-  max-width: 1920px;
+  /* max-width: 1920px; */
   padding: 0 6px;
   margin: 0 auto;
 }
@@ -141,13 +138,12 @@ button {
 }
 
 .logo {
-  /* max-width: 25%; */
 }
 
 .logo a {}
 
 .logo img {
-  width: 100%;
+  width: 100px;
 }
 
 #canon-gnb {
@@ -190,6 +186,7 @@ button {
   display: none;
   position: absolute;
   left: 0;
+  right: 0;
   top: 99%;
   width: 100%;
   background-color: #fff;
@@ -214,7 +211,7 @@ button {
 
 .depth2>li>a {
   display: block;
-  width: 150px;
+  width: 180px;
   font-size: 1.2em;
   font-weight: 600;
 }
@@ -421,7 +418,7 @@ button {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 50px;
+  bottom: 14%;
   border-bottom: 1px solid rgba(26, 19, 17, 0.2);
 }
 .public {

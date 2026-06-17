@@ -27,7 +27,7 @@
   }
 
   .logo img {
-    width: 120%;
+    width: 120px;
   }
 
   .search-btn {
@@ -81,11 +81,9 @@
 
   }
 
-  .line {
-
-    bottom: 75px;
-
-  }
+    .line {
+  bottom: 18%;
+}
 
 
   .mo-gnb-sitemap {
@@ -198,7 +196,7 @@
 
 
   .logo img {
-    width: 150%;
+    width: 150px;
   }
 
   .depth2-container {}
@@ -231,19 +229,19 @@
     font-size: 1em;
   }
 
+
+.sns-wrap {
+  right: 105px;
+  bottom: 100px;
+}
+
+/* 패밀리사이트 */
   .fs-wrap {
     top: 30px;
     right: 105px;
   }
 
-  .sns-wrap {
-
-    right: 105px;
-
-    bottom: 100px;
-
-  }
-
+  /* 사이트맵 */
   .mo-gnb-sitemap {
     padding-left: 20%;
   }
@@ -313,6 +311,9 @@
 
 /* 4.1 laptop 1600~ */
 @media screen and (min-width: 1600px) {
+  body{
+    font-size: 18px;
+  }
   .mo-gnb-sitemap {
     padding-left: 30%;
   }

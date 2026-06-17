@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/common_rwd.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/main_rwd.css">
+  <link rel="icon" href="/images/logo-wh.svg" type="image/svg">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/lenis.min.js"></script>
@@ -23,6 +24,7 @@
 </head>
 
 <body>
+  <!-- 헤더 -->
   <header id="canon-hd">
     <div class="hd-container wrap">
       <h1 class="logo"><a href="index.html"><img src="images/logo.svg" alt="캐논로고"></a></h1>
@@ -65,7 +67,7 @@
             </div>
           </li>
           <li class="depth1">
-            <a href="#">비즈니스</a>
+            <a href="loading.html">비즈니스</a>
             <div class="depth2-container wrap sub2">
               <ul class="depth2">
                 <li><a href="#">비즈니스 제품</a>
@@ -111,7 +113,7 @@
             </div>
           </li>
           <li class="depth1">
-            <a href="#">이벤트</a>
+            <a href="loading.html">이벤트</a>
             <div class="depth2-container wrap sub3">
               <ul class="depth2">
                 <li><a href="#"><span class="gnb-line">진행 중인 이벤트</span></a></li>
@@ -121,7 +123,7 @@
             </div>
           </li>
           <li class="depth1">
-            <a href="#">서비스</a>
+            <a href="loading.html">서비스</a>
             <div class="depth2-container wrap sub4">
               <ul class="depth2">
                 <li><a href="#"><span class="gnb-line">매장 안내</span></a></li>
@@ -149,7 +151,7 @@
             </div>
           </li>
           <li class="depth1">
-            <a href="#">고객지원</a>
+            <a href="loading.html">고객지원</a>
             <div class="depth2-container wrap sub5">
               <ul class="depth2">
                 <li><a href="#"><span class="gnb-line">정품사용 캠페인</span></a></li>
@@ -217,6 +219,7 @@
   </header>
 
   <div id="canon-main">
+    <!-- 히어로 -->
     <section class="main-section main-section-hero">
       <div class="hero-wrap">
         <h2 class="blind">비주얼 영역</h2>
@@ -226,6 +229,7 @@
       </div>
     </section>
 
+    <!-- 신제품 -->
     <section class="main-section main-section-new">
       <div class="new-wrap wrap">
         <h2>New product</h2>
@@ -274,6 +278,7 @@
       </div>
     </section>
 
+    <!-- 추천 -->
     <section class="main-section main-section-recommend">
       <div class="recommend-wrap wrap">
         <h2>Recommend</h2>
@@ -285,19 +290,119 @@
             <button class="recommend-button etc">etc</button>
           </div>
           <div class="recommend-item">
-            <div><a href="#" class="item-link"><img src="images/EOS_R50_V.png"
-                  alt="EOS_R50_V 카메라"><span>EOS_R50_V</span></a></div>
-            <div><a href="#" class="item-link"><img src="images/EOS_C50.png" alt="EOS_C50 카메라"><span>EOS_C50</span></a>
+
+            <div class="rec-card">
+              <div class="rec-card-img">
+                <img src="images/EOS_R50_V.png" alt="EOS R50 V">
+              </div>
+              <div class="rec-card-body">
+                <p class="rec-card-name">EOS R50 V</p>
+                <p class="rec-card-spec">2,420만 화소 · DIGIC X · 4K 영상<br>크리에이터를 위한 경량 미러리스</p>
+                <div class="rec-card-footer">
+                  <span class="rec-card-price">₩899,000</span>
+                  <a href="#" class="rec-card-btn">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div><a href="#" class="item-link"><img src="images/PowerShot_G7_X_Mark_III.png"
-                  alt="PowerShot_G7_X_Mark_III 카메라"><span>PowerShot_G7_X_Mark_III</span></a></div>
-            <div><a href="#" class="item-link"><img src="images/EOS_R50_V.png"
-                  alt="EOS_R50_V 카메라"><span>EOS_R50_V</span></a></div>
-            <div><a href="#" class="item-link"><img src="images/EOS_C50.png" alt="EOS_C50 카메라"><span>EOS_C50</span></a>
+
+            <div class="rec-card">
+              <div class="rec-card-img">
+                <img src="images/EOS_C50.png" alt="EOS C80">
+              </div>
+              <div class="rec-card-body">
+                <p class="rec-card-name">EOS C80</p>
+                <p class="rec-card-spec">6K RAW · Cinema EOS 시스템<br>콤팩트 바디의 시네마 퀄리티</p>
+                <div class="rec-card-footer">
+                  <span class="rec-card-price">₩4,200,000 </span>
+                  <a href="#" class="rec-card-btn">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div><a href="#" class="item-link"><img src="images/PowerShot_G7_X_Mark_III.png"
-                  alt="PowerShot_G7_X_Mark_III 카메라"><span>PowerShot_G7_X_Mark_III</span></a></div>
+
+            <div class="rec-card">
+              <div class="rec-card-img">
+                <img src="images/PowerShot_G7_X_Mark_III.png" alt="PowerShot G7X Mark III">
+              </div>
+              <div class="rec-card-body">
+                <p class="rec-card-name">PowerShot G7X Mark III</p>
+                <p class="rec-card-spec">2,010만 화소 · 1인치 센서<br>블로거·여행자를 위한 콤팩트</p>
+                <div class="rec-card-footer">
+                  <span class="rec-card-price">₩799,000 </span>
+                  <a href="#" class="rec-card-btn">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="rec-card">
+              <div class="rec-card-img">
+                <img src="images/EOS_R50_V.png" alt="EOS R50 V">
+              </div>
+              <div class="rec-card-body">
+                <p class="rec-card-name">EOS R50 V</p>
+                <p class="rec-card-spec">2,420만 화소 · DIGIC X · 4K 영상<br>크리에이터를 위한 경량 미러리스</p>
+                <div class="rec-card-footer">
+                  <span class="rec-card-price">₩899,000 </span>
+                  <a href="#" class="rec-card-btn">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="rec-card">
+              <div class="rec-card-img">
+                <img src="images/EOS_C50.png" alt="EOS C80">
+              </div>
+              <div class="rec-card-body">
+                <p class="rec-card-name">EOS C80</p>
+                <p class="rec-card-spec">6K RAW · Cinema EOS 시스템<br>콤팩트 바디의 시네마 퀄리티</p>
+                <div class="rec-card-footer">
+                  <span class="rec-card-price">₩4,200,000 </span>
+                  <a href="#" class="rec-card-btn">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="rec-card">
+              <div class="rec-card-img">
+                <img src="images/PowerShot_G7_X_Mark_III.png" alt="PowerShot G7X Mark III">
+              </div>
+              <div class="rec-card-body">
+                <p class="rec-card-name">PowerShot G7X Mark III</p>
+                <p class="rec-card-spec">2,010만 화소 · 1인치 센서<br>블로거·여행자를 위한 콤팩트</p>
+                <div class="rec-card-footer">
+                  <span class="rec-card-price">₩799,000 </span>
+                  <a href="#" class="rec-card-btn">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
           </div>
+          <!-- <div class="recommend-item">
+            <div><a href="#" class="item-link"><img src="images/EOS_R50_V.png"
+                  alt="EOS_R50_V 카메라"><span>EOS_R50_V</span></a></div>
+            <div><a href="#" class="item-link"><img src="images/EOS_C50.png" alt="EOS_C50 카메라"><span>EOS_C50</span></a>
+            </div>
+            <div><a href="#" class="item-link"><img src="images/PowerShot_G7_X_Mark_III.png"
+                  alt="PowerShot_G7_X_Mark_III 카메라"><span>PowerShot_G7_X_Mark_III</span></a></div>
+            <div><a href="#" class="item-link"><img src="images/EOS_R50_V.png"
+                  alt="EOS_R50_V 카메라"><span>EOS_R50_V</span></a></div>
+            <div><a href="#" class="item-link"><img src="images/EOS_C50.png" alt="EOS_C50 카메라"><span>EOS_C50</span></a>
+            </div>
+            <div><a href="#" class="item-link"><img src="images/PowerShot_G7_X_Mark_III.png"
+                  alt="PowerShot_G7_X_Mark_III 카메라"><span>PowerShot_G7_X_Mark_III</span></a></div>
+          </div> -->
           <div class="progress-bar">
             <div class="progress"></div>
           </div>
@@ -305,6 +410,7 @@
       </div>
     </section>
 
+    <!-- 브랜드 -->
     <section class="main-section main-section-etc">
       <div class="wrap etc-wrap">
         <div class="etc-title">
@@ -348,6 +454,7 @@
       </div>
     </section>
 
+    <!-- 커뮤니티 -->
     <section class="main-section main-section-community">
       <div class="community-wrap wrap">
         <h2>Canon Community</h2>
@@ -384,6 +491,7 @@
       </div>
     </section>
 
+    <!-- 서비스 -->
     <section class="main-section main-section-service">
       <div class="wrap service-wrap">
         <h2>Service</h2>
@@ -423,6 +531,7 @@
     </section>
   </div> <!-- main -->
 
+  <!-- 푸터 -->
   <footer id="canon-ft">
     <div class="ft-container wrap">
       <h1 class="blind">회사정보</h1>
@@ -511,7 +620,7 @@
           <a href="#">컨슈머</a>
           <div class="mo-depth2-wrap">
             <ul class="mo-depth2">
-              <li><a href="#">컨슈머 제품</a>
+              <li><a href="product.html">컨슈머 제품</a>
                 <ul class="mo-depth3">
                   <li><a href="#">렌즈교환카메라</a></li>
                   <li><a href="#">렌즈</a></li>
@@ -549,7 +658,7 @@
           </div>
         </li>
         <li class="mo-depth1">
-          <a href="#">비즈니스</a>
+          <a href="loading.html">비즈니스</a>
           <div class="mo-depth2-wrap">
             <ul class="mo-depth2">
               <li><a href="#">비즈니스 제품</a>
@@ -599,7 +708,7 @@
           </div>
         </li>
         <li class="mo-depth1">
-          <a href="#">이벤트</a>
+          <a href="loading.html">이벤트</a>
           <div class="mo-depth2-wrap">
             <ul class="mo-depth2">
               <li><a href="#">진행 중인 이벤트</a></li>
@@ -609,7 +718,7 @@
           </div>
         </li>
         <li class="mo-depth1">
-          <a href="#">서비스</a>
+          <a href="loading.html">서비스</a>
           <div class="mo-depth2-wrap">
             <ul class="mo-depth2">
               <li><a href="#">매장 안내</a></li>
@@ -637,7 +746,7 @@
           </div>
         </li>
         <li class="mo-depth1">
-          <a href="#">고객지원</a>
+          <a href="loading.html">고객지원</a>
           <div class="mo-depth2-wrap">
             <ul class="mo-depth2">
               <li>

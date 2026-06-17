@@ -7,13 +7,14 @@
 }
 
 .main-section {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .main-section h2 {
   font-size: 48px;
   text-align: center;
-  font-family: var(--secondary-font);
+  font-family: var(--serif-font);
+  font-weight: 800;
   color: var(--primary-color);
 }
 
@@ -37,11 +38,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  /* 빈 곳 없이 꽉꽉 채우게 하기(선택 아닌 필수)*/
-  /* 
-  절대로 짤려 나가지 말아야하면 contain
-  fill = 억지로 화면에 맞추는 것
-  */
   object-position: center top;
 }
 
@@ -128,10 +124,13 @@ padding-top: 2em;
 }
 
 
-.recommend-wrap {}
+.recommend-wrap {
+      padding-top: 2em;
+    padding-bottom: 5em;
+}
 
 .recommend-container {
-  height: 720px;
+  height: auto;
   width: 100%;
 }
 
@@ -141,18 +140,113 @@ padding-top: 2em;
 
 .recommend-button {
   color: #fff;
-  margin: 2em 0;
   padding: 0.5em;
   font-size: 1.2em;
-  text-shadow: #000 5px 8px 10px;
+  text-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
 }
 
 .recommend-button.active {
   color: var(--point-color);
 }
 
-.recommend-item {}
+.recommend-item {
+    display: flex;
+  gap: 14px;
+  margin-top: 24px;
+}
 
+.rec-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0 7px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rec-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* 카드 이미지 */
+.rec-card-img {
+  position: relative;
+  height: 180px;
+  background: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.rec-card-img img {
+  width: 80%;
+  height: 100%;
+  object-fit: contain;
+  margin: auto;
+  transition: transform 0.4s ease;
+}
+
+.rec-card:hover .rec-card-img img {
+  transform: scale(1.04);
+}
+
+/* 카드 본문 */
+.rec-card-body {
+  padding: 14px 16px 16px;
+}
+
+.rec-card-name {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.rec-card-spec {
+  margin-bottom: 12px;
+  font-size: 0.8em;
+  line-height: 1.55;
+  opacity: 0.7;
+}
+
+/* 카드 하단 */
+.rec-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 0.5px solid #ebebeb;
+  padding-top: 11px;
+}
+
+.rec-card-price {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.rec-card-price em {
+  font-size: 10px;
+  font-weight: 400;
+  color: #bbb;
+  font-style: normal;
+}
+
+.rec-card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1.5px solid #111;
+  color: #111;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.rec-card:hover .rec-card-btn {
+  background: var(--point-color);
+  border-color: var(--point-color);
+  color: #fff;
+}
+
+/* 
 .recommend-item>div {
   height: 100%;
 }
@@ -173,9 +267,10 @@ padding-top: 2em;
   display: block;
   color: #fff;
   text-align: center;
-}
+} */
 
 .progress-bar {
+  margin-top: 3em;
   width: 100%;
   height: 4px;
   background: #ddd;
@@ -316,7 +411,6 @@ padding-top: 2em;
 .main-section-community {}
 
 .community-wrap {
-  height: 100vh;
 }
 
 .community-wrap h2 {

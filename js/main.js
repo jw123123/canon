@@ -8,6 +8,7 @@ $(function () {
   const bar = $(".progress");
   let speed = 3000;
   const newItemList = $('.new-pagination li');
+  const recommendBtn = $('.recommend-button')
 
 
   //etc 영역
@@ -48,36 +49,40 @@ $(function () {
     bar.css('width', width + '%');
   });
 
-
-  // 2. 그 다음 슬라이더를 실행합니다.
   //슬라이더
   slider.slick({
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
-    pauseOnHover: false,  // 마우스 올렸을 때 멈춤 해제
-    pauseOnFocus: false,  // 클릭(포커스) 시 멈춤 해제
+    pauseOnHover: true, 
+    pauseOnFocus: false,  
     pauseOnDotsHover: false,
-    responsive: [ // 화면 크기가 변할 때(Responsive)
+    responsive: [
       {
-        breakpoint: 767, // 특정 지점(Breakpoint)
+        breakpoint: 767, 
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 1279, // 1279px화면 이하
+        breakpoint: 1279,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
         }
       }
     ]
   });
+
+  recommendBtn.click(function(){
+    recommendBtn.removeClass("active");
+    $(this).addClass("active");
+  });
+
 
   // 신제품 스와이퍼
   let swiper = new Swiper(".myswiper", {
@@ -90,10 +95,6 @@ $(function () {
           fadeEffect: {
       crossFade: true
     },
-    // autoplay: {
-    //   delay: 2000,
-    //   disableOnInteraction: false,
-    // },
    on: {
       init: function() {
         // 초기 로드 시 첫 번째 아이템에 active 추가
@@ -117,8 +118,4 @@ $(function () {
     let idx = $(this).index();
     swiper.slideTo(idx);
   });
-  // newItemList.on('mouseleave', () => {
-  //   // 마우스를 떼면 다시 자동 재생 시작
-  //   swiper.autoplay.start();
-  // }); 
 });

@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>캐논코리아</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>준비중</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/common_rwd.css">
-  <link rel="stylesheet" href="css/sub.css">
-  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/loading.css">
   <link rel="icon" href="/images/logo-wh.svg" type="image/svg">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
   <script src="js/lenis.min.js"></script>
   <script src="js/common.js"></script>
-  <script src="js/sub.js"></script>
-
 </head>
-
-<body class="sub0-0 sub">
-  <!-- 1. 상단 헤더 -->
+<body>
   <header id="canon-hd">
     <div class="hd-container wrap">
       <h1 class="logo"><a href="index.html"><img src="images/logo.svg" alt="캐논로고"></a></h1>
@@ -214,355 +210,36 @@
     </div>
   </header>
 
-  <!-- 3. 서브헤더 & 비주얼 -->
-  <header class="sub-hd">
-    <section class="sub-hd-lnb wrap">
-      <nav id="canon-lnb">
-        <h2></h2>
-        <h3 class="blind">LNB 서브메뉴</h3>
-        <a href="#" class="canon-lnb-btn blind">회사개요</a>
-        <ul class="depth2-list">
-          <li>
-            <a href="#">컨슈머 제품</a>
-            <ul class="sub-depth3">
-              <li><a href="#" class="active">렌즈교환카메라</a></li>
-              <li><a href="#">렌즈</a></li>
-              <li><a href="#">컴팩트 카메라</a></li>
-              <li><a href="#">브이로그 카메라</a></li>
-              <li><a href="#">잉크젯프린터</a></li>
-              <li><a href="#">미니 포토 프린터</a></li>
-              <li><a href="#">골프 거리측정기</a></li>
-              <li><a href="#">쌍안경</a></li>
-              <li><a href="#">프리젠터</a></li>
-              <li><a href="#">계산기</a></li>
-              <li><a href="#">웨어러블 카메라</a></li>
-              <li><a href="#">정부조달제품</a></li>
-              <li><a href="#">C Logue</a></li>
-              <li><a href="#">SDK</a></li>
-            </ul>
-          </li>
-          <li><a href="#">영상/방송 기기</a>
-            <ul class="sub-depth3">
-              <li><a href="#">CINEMA EOS SYSTEM</a></li>
-              <li><a href="#">방송용 렌즈</a></li>
-              <li><a href="#">4K 디스플레이</a></li>
-              <li><a href="#">캠코더</a></li>
-              <li><a href="#">PTZ 리모트 카메라</a></li>
-              <li><a href="#">액세서리</a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="depth2-list">
-          <li><a href="#">비즈니스 제품</a>
-            <ul class="sub-depth3">
-              <li><a href="#">솔루션</a></li>
-              <li><a href="#">디지털인쇄기</a></li>
-              <li><a href="#">복합기</a></li>
-              <li><a href="#">대형프린터</a></li>
-              <li><a href="#">레이저프린터</a></li>
-              <li><a href="#">스캐너</a></li>
-              <li><a href="#">팩시밀리</a></li>
-              <li><a href="#">프로젝터</a></li>
-              <li><a href="#">네트워크 카메라</a></li>
-              <li><a href="#">의료기기</a></li>
-              <li><a href="#">웨어러블 카메라</a></li>
-              <li><a href="#">카드 프린터</a></li>
-              <li><a href="#">정부조달제품</a></li>
-            </ul>
-          </li>
-          <li><a href="#">영상/방송 기기</a>
-            <ul class="sub-depth3">
-              <li><a href="#">CINEMA EOS SYSTEM</a></li>
-              <li><a href="#">방송용 렌즈</a></li>
-              <li><a href="#">4K 디스플레이</a></li>
-              <li><a href="#">캠코더</a></li>
-              <li><a href="#">PTZ 리모트 카메라</a></li>
-              <li><a href="#">액세서리</a></li>
-            </ul>
-          </li>
-          <li><a href="#">제품 구입/지원</a>
-            <ul class="sub-depth3">
-              <li><a href="#">전시장 안내</a></li>
-              <li><a href="#">E-카탈로그</a></li>
-              <li><a href="#">구매 및 렌탈문의</a></li>
-              <li><a href="#">정품등록</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#"><span class="gnb-line">비즈몰</span></a>
-          </li>
-          <li><a href="#"><span class="gnb-line">파트너웹</span></a></li>
-        </ul>
-        <ul class="depth2-list">
-          <li><a href="#"><span class="gnb-line">진행 중인 이벤트</span></a></li>
-          <li><a href="#"><span class="gnb-line">종료된 이벤트</span></a></li>
-          <li><a href="#"><span class="gnb-line">당첨자 발표</span></a></li>
-        </ul>
-        <ul class="depth2-list">
-          <li><a href="#"><span class="gnb-line">매장 안내</span></a></li>
-          <li><a href="#"><span class="gnb-line">정품등록</span></a></li>
-          <li><a href="#"><span class="gnb-line">다운로드센터</span></a></li>
-          <li><a href="#"><span class="gnb-line">프로 지원</span></a></li>
-          <li><a href="#"><span class="gnb-line">아카데미</span></a></li>
-          <li><a href="#"><span class="gnb-line">굿즈포토스토어</span></a></li>
-          <li><a href="#">라운지</a>
-            <ul class="sub-depth3">
-              <li><a href="#">캐논플렉스</a></li>
-              <li><a href="#">매거진</a></li>
-              <li><a href="#">캐논갤러리</a></li>
-              <li><a href="#">디지털갤러리</a></li>
-              <li><a href="#">RF Lens World</a></li>
-              <li><a href="#">크리에이티브 파크</a></li>
-              <li><a href="#">Easy-Photo Print Editor</a></li>
-              <li><a href="#">Poster Artist Life</a></li>
-              <li><a href="#">모바일앱</a></li>
-              <li><a href="#">image.canon</a></li>
-              <li><a href="#">LUT Library</a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="depth2-list">
-          <li><a href="#"><span class="gnb-line">정품사용 캠페인</span></a></li>
-          <li><a href="#"><span class="gnb-line">공지사항</span></a></li>
-          <li><a href="#"><span class="gnb-line">FAQ</span></a></li>
-          <li><a href="#"><span class="gnb-line">1:1문의</span></a></li>
-        </ul>
-        <ul class="depth2-list">
-          <li><a href="company.html">캐논코리아</a>
-            <ul class="sub-depth3">
-              <li><a href="company.html">개요/비전</a></li>
-              <li><a href="#">CEO메시지</a></li>
-              <li><a href="#">CI/BI소개</a></li>
-              <li><a href="#">기업연혁</a></li>
-              <li><a href="#">사업장 소개</a></li>
-            </ul>
-          </li>
-          <li><a href="#">경영정보</a>
-            <ul class="sub-depth3">
-              <li><a href="#">경영현황</a></li>
-              <li><a href="#">결산보고</a></li>
-            </ul>
-          </li>
-          <li><a href="#">윤리경영</a>
-            <ul class="sub-depth3">
-              <li><a href="#">윤리 경영의 이해</a></li>
-              <li><a href="#">윤리 경영의 필요성</a></li>
-              <li><a href="#">윤리 강령</a></li>
-              <li><a href="#">행동 준칙</a></li>
-              <li><a href="#">부정부조리 제보</a></li>
-              <li><a href="#">Compliance Hotline</a></li>
-            </ul>
-          </li>
-          <li><a href="#">지속가능경영</a>
-            <ul class="sub-depth3">
-              <li><a href="#">친환경기업</a></li>
-              <li><a href="#">사회공헌</a></li>
-              <li><a href="#">공정거래 자율준수 프로그램</a></li>
-              <li><a href="#">서플라이어 행동규범</a></li>
-              <li><a href="#">소비자중심경영</a></li>
-            </ul>
-          </li>
-          <li><a href="#"><span class="gnb-line">브랜드 소식</span></a></li>
-          <li><a href="#"><span class="gnb-line">정품사용 캠페인</span></a></li>
-        </ul>
 
-      </nav>
-    </section>
-  </header>
+  <div class="coming-wrap wrap">
+    <section class="coming-page viewfinder-page" aria-labelledby="viewfinder-title">
+      <div class="coming-inner">
+        <div class="viewfinder-box">
+          <span class="corner corner-left-top"></span>
+          <span class="corner corner-right-top"></span>
+          <span class="corner corner-left-bottom"></span>
+          <span class="corner corner-right-bottom"></span>
+          <span class="focus-box"></span>
+          <span class="rec-dot"></span>
+          <span class="rec-text">REC</span>
 
-  <!-- 3-1. 메인영역 -->
-
-  <div id="product-main" class="wrap">
-    <section class="sub-sec product-sec">
-      <!-- section으로 시작하면 h2의 넘버링 다시 시작 가능 -->
-      <h2 class="blind">제품</h2>
-      <div class="product-container">
-        <ul class="card-list">
-          <li class="product-card">
-            <div class="img-box">
-              <img src="images/EOS_C50.png" alt="EOS_C50">
+          <div class="coming-content">
+            <span class="sub-title">PAGE IN PROGRESS</span>
+            <h1 id="viewfinder-title">새로운 페이지를<br>준비하고 있습니다</h1>
+            <p>
+              더 완성도 높은 Canon Korea의 브랜드 경험을 위해<br>
+              현재 콘텐츠를 준비 중입니다.
+            </p>
+            <div class="btn-group">
+              <a href="index.html" class="home-btn">Home</a>
             </div>
-            <div class="product-content">
-              <dl>
-                <dt class="product-title">
-                  EOS R6 Mark III
-                </dt>
-                <dd class="price">6,199,000</dd>
-                <dd class="product-txt">
-                  <span>약 3,250만 화소 풀프레임 CMOS 센서</span>
-                  <span>최대 약 40fps의 고속 연속 촬영</span>
-                  <span>최대 연속촬영 횟수 약 330장</span>
-                </dd>
-              </dl>
-            </div>
-            <a href="#">
-              <span class="blind">자세히보기</span>
-            </a>
-          </li>
-          <li class="product-card">
-            <div class="img-box">
-              <img src="images/EOS_C50.png" alt="EOS_C50">
-            </div>
-            <div class="product-content">
-              <dl>
-                <dt class="product-title">
-                  EOS R6 Mark III
-                </dt>
-                <dd class="price">6,199,000</dd>
-                <dd class="product-txt">
-                  <span>약 3,250만 화소 풀프레임 CMOS 센서</span>
-                  <span>최대 약 40fps의 고속 연속 촬영</span>
-                  <span>최대 연속촬영 횟수 약 330장</span>
-                </dd>
-              </dl>
-            </div>
-            <a href="#">
-              <span class="blind">자세히보기</span>
-            </a>
-          </li>
-          <li class="product-card">
-            <div class="img-box">
-              <img src="images/EOS_C50.png" alt="EOS_C50">
-            </div>
-            <div class="product-content">
-              <dl>
-                <dt class="product-title">
-                  EOS R6 Mark III
-                </dt>
-                <dd class="price">6,199,000</dd>
-                <dd class="product-txt">
-                  <span>약 3,250만 화소 풀프레임 CMOS 센서</span>
-                  <span>최대 약 40fps의 고속 연속 촬영</span>
-                  <span>최대 연속촬영 횟수 약 330장</span>
-                </dd>
-              </dl>
-            </div>
-            <a href="#">
-              <span class="blind">자세히보기</span>
-            </a>
-          </li>
-          <li class="product-card">
-            <div class="img-box">
-              <img src="images/EOS_C50.png" alt="EOS_C50">
-            </div>
-            <div class="product-content">
-              <dl>
-                <dt class="product-title">
-                  EOS R6 Mark III
-                </dt>
-                <dd class="price">6,199,000</dd>
-                <dd class="product-txt">
-                  <span>약 3,250만 화소 풀프레임 CMOS 센서</span>
-                  <span>최대 약 40fps의 고속 연속 촬영</span>
-                  <span>최대 연속촬영 횟수 약 330장</span>
-                </dd>
-              </dl>
-            </div>
-            <a href="#">
-              <span class="blind">자세히보기</span>
-            </a>
-          </li>
-          <li class="product-card">
-            <div class="img-box">
-              <img src="images/EOS_C50.png" alt="EOS_C50">
-            </div>
-            <div class="product-content">
-              <dl>
-                <dt class="product-title">
-                  EOS R6 Mark III
-                </dt>
-                <dd class="price">6,199,000</dd>
-                <dd class="product-txt">
-                  <span>약 3,250만 화소 풀프레임 CMOS 센서</span>
-                  <span>최대 약 40fps의 고속 연속 촬영</span>
-                  <span>최대 연속촬영 횟수 약 330장</span>
-                </dd>
-              </dl>
-            </div>
-            <a href="#">
-              <span class="blind">자세히보기</span>
-            </a>
-          </li>
-          <li class="product-card">
-            <div class="img-box">
-              <img src="images/EOS_C50.png" alt="EOS_C50">
-            </div>
-            <div class="product-content">
-              <dl>
-                <dt class="product-title">
-                  EOS R6 Mark III
-                </dt>
-                <dd class="price">6,199,000</dd>
-                <dd class="product-txt">
-                  <span>약 3,250만 화소 풀프레임 CMOS 센서</span>
-                  <span>최대 약 40fps의 고속 연속 촬영</span>
-                  <span>최대 연속촬영 횟수 약 330장</span>
-                </dd>
-              </dl>
-            </div>
-            <a href="#">
-              <span class="blind">자세히보기</span>
-            </a>
-          </li>
-          <li class="product-card">
-            <div class="img-box">
-              <img src="images/EOS_C50.png" alt="EOS_C50">
-            </div>
-            <div class="product-content">
-              <dl>
-                <dt class="product-title">
-                  EOS R6 Mark III
-                </dt>
-                <dd class="price">6,199,000</dd>
-                <dd class="product-txt">
-                  <span>약 3,250만 화소 풀프레임 CMOS 센서</span>
-                  <span>최대 약 40fps의 고속 연속 촬영</span>
-                  <span>최대 연속촬영 횟수 약 330장</span>
-                </dd>
-              </dl>
-            </div>
-            <a href="#">
-              <span class="blind">자세히보기</span>
-            </a>
-          </li>
-          <li class="product-card">
-            <div class="img-box">
-              <img src="images/EOS_C50.png" alt="EOS_C50">
-            </div>
-            <div class="product-content">
-              <dl>
-                <dt class="product-title">
-                  EOS R6 Mark III
-                </dt>
-                <dd class="price">6,199,000</dd>
-                <dd class="product-txt">
-                  <span>약 3,250만 화소 풀프레임 CMOS 센서</span>
-                  <span>최대 약 40fps의 고속 연속 촬영</span>
-                  <span>최대 연속촬영 횟수 약 330장</span>
-                </dd>
-              </dl>
-            </div>
-            <a href="#">
-              <span class="blind">자세히보기</span>
-            </a>
-          </li>
-        </ul>
-        <nav class="pagination-wrapper">
-          <ul class="pagination">
-            <li class="page-prev"><a href="#">&lt;</a></li>
-
-            <li class="page-num active"><a href="#">1</a></li>
-            <li class="page-num"><a href="#">2</a></li>
-            <li class="page-num"><a href="#">3</a></li>
-            <li class="page-num"><a href="#">4</a></li>
-            <li class="page-num-more">...</li>
-            <li class="page-next"><a href="#">&gt;</a></li>
-          </ul>
-        </nav>
+          </div>
+        </div>
       </div>
     </section>
   </div>
-  <footer id="canon-ft">
+
+    <footer id="canon-ft">
     <div class="ft-container wrap">
       <h1 class="blind">회사정보</h1>
       <h2 class="ft-logo"><img src="images/ft_logo.svg" alt="캐논로고"></h2>
@@ -841,10 +518,4 @@
     </nav>
   </div>
 </body>
-  <script>$('.page-num a').on('click', function(e) {
-  e.preventDefault();
-  $('.page-num').removeClass('active'); 
-  $(this).parent().addClass('active');  
-  
-});</script>
 </html>
