@@ -125,7 +125,7 @@ HTML/CSS/JavaScript와 jQuery 기반 퍼블리싱 환경에서 Slick Slider, Len
 
 - 최종 결과물: https://jw123123.github.io/canon/
 - 피그마 디자인시안: https://www.figma.com/design/SxV3dMzwluh3ZzshddBhZI/%EC%BA%90%EB%85%BC-%EB%A6%AC%EB%89%B4%EC%96%BC-%EB%94%94%EC%9E%90%EC%9D%B8?node-id=114-1701&t=6q3lFVaJnVaHMfvv-1
-- GitHub 저장소: https://github.com/jw123123/canon
+- 포트폴리오: [canon.pdf](https://github.com/user-attachments/files/29042203/canon.pdf)
 
 ---
 
