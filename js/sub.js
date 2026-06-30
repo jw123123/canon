@@ -12,9 +12,7 @@ $(function () {
   bodyNum = bodyNum.split(" ");
   mainNum = bodyNum[0].slice(3, 4);
   subNum = bodyNum[0].slice(5, 6);
-
   let subEl = lnb.eq(mainNum).children().eq(subNum);
-
 
 
   // 페이지 타이틀 입력
@@ -22,7 +20,7 @@ $(function () {
 
 
   // LNB 화면에 표시(해상도에 따라)
-  if (body.hasClass("mo")) { // 모바일이라면
+  if (body.hasClass("mo")) {
     lnb.eq(mainNum).css("display", "none");
     subEl.find(".sub-depth3").css("display", "none");
   } else {
@@ -35,15 +33,13 @@ $(function () {
   subEl.addClass("active");
 
 
-
-
   // 모바일 LNB Label 입력
   lnbBtn.text(subEl.text());
 
 
-  // LNB 리스트 제어(해상도 리사이즈)
+  // LNB 리스트 제어
   $(window).resize(function () {
-    if (body.hasClass("mo")) { // 모바일이라면
+    if (body.hasClass("mo")) {
       lnb.eq(mainNum).css("display", "none");
     } else {
       lnb.eq(mainNum).css("display", "flex");
@@ -51,7 +47,7 @@ $(function () {
   });
 
 
-  // LNB 제어(mo에서 버튼 클릭하면 하위리스트 열리기)
+  // LNB 제어
   lnbBtn.click(function () {
     lnb.eq(mainNum).toggle();
   });

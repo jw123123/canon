@@ -3,85 +3,73 @@
 
 /* 1. mo */
 @media screen and (max-width: 767px) {
-  
   .community-container{
     height: 980px;
   }
-
 }
 
 /* 2. tb~ */
 @media screen and (min-width: 768px) {
   .main-section {
-  padding-bottom: 200px;
-}
+    padding-bottom: 200px;
+  }
 
   .main-section h2 {
-
     font-size: 48px;
-
   }
 
   #canon-main {
     padding-top: 70px;
-    /* 태블릿 헤더 높이 */
   }
 
   .hero-container {
     padding-top: 56.25%;
-    /* 4:3 비율 박스 */
   }
 
-  .hero-video {}
 
   /* 신제품영역 */
   .new-item-list div:first-child {
-  width: 65%;
-}
+    width: 65%;
+  }
+  
   .new-img { 
-     padding-top: 4em;
+    padding-top: 4em;
     height: 400px;
   }
+  
   .new-img img {
     border-radius: 20px;
-
   }
-.new-content {
-  font-size: 1.3em;
-}
+  
+  .new-content {
+    font-size: 1.3em;
+  }
 
-.new-pagination {
-  position: absolute;
-  top: 30%;
-  right: 2%;
-  display: flex;
-  gap: 1em;
-  padding: 0;
-  font-size: 1em;
-  z-index: 1;
-  font-weight: 500;
-}
-.new-pagination a {
-  color: rgba(0, 0, 0, 0.5);
-}
+  .new-pagination {
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    display: flex;
+    gap: 1em;
+    padding: 0;
+    font-size: 1em;
+    z-index: 1;
+    font-weight: 500;
+  }
 
-.new-pagination>.active>a {
-  color: var(--point-color);
-  border-bottom: 2px solid var(--point-color);
-  font-size: 1.1em;
-}
+  .new-pagination a {color: rgba(0, 0, 0, 0.5);}
 
-.new-pagination a {
-}
-
-.new-pagination a:after {
-}
+  .new-pagination>.active>a {
+    color: var(--point-color);
+    border-bottom: 2px solid var(--point-color);
+    font-size: 1.1em;
+  }
 
 
   /* 제품영역 */
   .recommend-wrap {
-      padding-top: 3em;
-}
+    padding-top: 3em;
+  }
 
   .recommend-button {
     padding: 1.3em;
@@ -89,12 +77,10 @@
   }
 
 
-
   /* etc영역 */
-
   .etc-wrap {
-  height: 70vh;
-}
+    height: 70vh;
+  }
 
   .etc-container {
     display: flex;
@@ -119,7 +105,6 @@
     background-size: 120%;
   }
 
-
   .item ul {
     top: 42%;
   }
@@ -133,26 +118,24 @@
     font-size: 1em;
   }
 
+  
   /* 커뮤니티 영역 */
   .com-list {
-
-  background-size: 100%;
-
-}
+    background-size: 100%;
+  }
 
 
   /* 서비스 영역 */
-  
   .service-container{
-  padding-top: 2em;
-}
+    padding-top: 2em;
+  }
 
-.service-list {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2em;
-  justify-content: center;
+  .service-list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
     width: 100%;
     height: 100%;
   }
@@ -172,18 +155,11 @@
   }
   
   .service-item:hover {
-transform: scale(1.05);
-transition: 0.5s;
+    transform: scale(1.05);
+    transition: 0.5s;
   }
   
-  .service-item a:after {
-    /* 애니메이션 라인 */
-    display: none;
-  }
-  
-  .service-item a:hover ul {
-    
-  }
+  .service-item a:after {display: none;}
   
   .service-item ul {
     display: flex;
@@ -194,28 +170,14 @@ transition: 0.5s;
     text-align: center;
     font-size: 1.6em;
     font-weight: 700;
-    /* white-space: wrap; */
   }
 
-  .service-item a ul:before {
-    font-size: 2.4em;
-  }
-
-  .service-contents {
-    font-size: 16px;
-    /* display: none; */
-  }
-
-
-
+  .service-item a ul:before {font-size: 2.4em; }
+  .service-contents {font-size: 16px;}
 }
 
 /* 3. only tb */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .new-img {
-
-  }
-
   .etc-container {
     max-width: 870px;
     margin: 0 auto;
@@ -239,7 +201,6 @@ transition: 0.5s;
 
   #canon-main {
     padding-top: 100px;
-    /* pc 헤더 높이 */
   }
 
   .hero-container {
@@ -248,42 +209,21 @@ transition: 0.5s;
   }
 
   .hero-video {
-object-fit: cover;
-
+    object-fit: cover;
   }
+
 
   /* 신제품영역 */
-  .myswiper {
+  .new-item-list div:first-child {width: 50%;}
+  .new-img {height: 500px;}
+  .new-pagination {
+    top: 25%;
+    gap: 2em;
   }
-
-.new-item-list div:first-child {
-  width: 50%;
-}
-
-    .new-img { 
-
-    height: 500px;
-
-  }
-
-  .new-img img {}
-.new-pagination {
-
-  top: 25%;
-
-}
-.new-pagination {
-
-  gap: 2em;
-
-}
-
 
 
   /* 제품영역 */
-  .recommend-wrap {
-    padding-bottom: 6em;
-  }
+  .recommend-wrap {padding-bottom: 6em;}
 
   .recommend-button {
     padding: 1em 1em 2em;
@@ -291,31 +231,20 @@ object-fit: cover;
     font-size: 1.3em;
   }
 
-  .rec-card-img {
-    height: 200px;
+  .rec-card-img {height: 200px;}
+  .rec-card-name {font-size: 15px;}
+
+  .rec-card-spec {
+    font-size: 11px;
+    color: #888;
+    line-height: 1.55;
+    margin-bottom: 12px;
   }
-
-  .rec-card-name {
-  font-size: 15px;
-}
-
-.rec-card-spec {
-  font-size: 11px;
-  color: #888;
-  line-height: 1.55;
-  margin-bottom: 12px;
-}
 
 
   /* etc */
-
-  .etc-wrap {
-    height: 75vh;
-}
-
-  .title {
-    padding-bottom: 5em;
-  }
+  .etc-wrap {height: 75vh;}
+  .title {padding-bottom: 5em;}
 
   .etc-container {
     flex-wrap: nowrap;
@@ -348,18 +277,9 @@ object-fit: cover;
     color: #fff;
     top: 40%;
   }
-
   
-  .etc-item:last-child .view {
-    bottom: 30%;
-  }
-
-  .item {
-    background-size: cover;
-  }
-
-  .item>ul {
-  }
+  .etc-item:last-child .view {bottom: 30%;}
+  .item {background-size: cover;}
 
   .item:hover ul {
     width: 100%;
@@ -367,12 +287,7 @@ object-fit: cover;
     border-bottom: none;
   }
 
-  .item ul {
-    
-    top: 40%;
-    
-  }
-  
+  .item ul {top: 40%;}
   .text {
     font-size: 32px;
     font-weight: 500;
@@ -388,6 +303,7 @@ object-fit: cover;
     font-size: 1em;
   }
   
+
   /* 커뮤니티 영역 */
   .community-wrap {
     position: relative;
@@ -417,6 +333,7 @@ object-fit: cover;
     align-items: flex-end;
     gap: 1.5em;
   }
+  
   .community2 {
     display: flex;
     justify-content: space-between;
@@ -443,22 +360,21 @@ object-fit: cover;
     opacity: 1;
   }
   
-  .brand:before {    
-    background-color: var(--point-color);
-
-  }
-  .event:before {    
-    background-color: #bfbdbd;
-  }
+  .brand:before {background-color: var(--point-color);}
+  .event:before {background-color: #bfbdbd;}
+  
+  
   .com-list:hover {
     background-size: 105%;
     transition: 0.5s;
   }
+  
   .com-list:hover:before {
     content: '';
     opacity: 0;
     transition: 0.5s;
   }
+  
   .com-btn {
     position: relative;
     display: flex;
@@ -467,9 +383,7 @@ object-fit: cover;
     justify-content: flex-end;
     padding: 20px;
     text-align: center;
-    /* color: var(--primary-color); */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   }
 
   .com-btn dt {
@@ -479,62 +393,38 @@ object-fit: cover;
 
   .com-btn dd {
     font-size: 1.3em;
-    /* display: none; */
     word-break: keep-all;
   }
 
+
   /* 서비스영역 */
   .service-list {
-
-flex-wrap: nowrap;
-
+    flex-wrap: nowrap;
   }
 
-.service-item {
-  width: 25%;
-  height: 300px;
-  padding: 30px 20px;
+  .service-item {
+    width: 25%;
+    height: 300px;
+    padding: 30px 20px;
+  }
 
+  .service-item ul {font-size: 1.8em;}
+  .service-contents {font-size: 20px;}
 }
-  .service-item ul {
-  font-size: 1.8em;
-  }
-  .service-contents {
 
-    font-size: 20px;
-
-  }
-
-
-}
 /* 5. pc 1600px부터~ */
-@media screen and (min-width: 1600px) {
-  
+@media screen and (min-width: 1600px) { 
   /* 추천제품 */
-    .rec-card {
-    margin: 0 20px;
-  }
-.rec-card-img {
-
-  height: 250px;
-
+  .rec-card {margin: 0 20px;}
+  .rec-card-img {height: 250px;}
 }
 
-}
+/* 6. laptop 1921~ */
+@media screen and (min-width: 1921px) {}
 
 
-/* 5. laptop 1921~ */
-@media screen and (min-width: 1921px) {
-
-}
-
-
+/* 애니메이션 */
 @keyframes product-page {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(100);
-  }
+  from {transform: translateX(0);}
+  to {transform: translateX(100);}
 }

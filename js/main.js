@@ -19,8 +19,8 @@ $(function () {
       $(this).find(text).addClass("active");
       $(this).find(viewMore).stop().toggle();
     }
-
   });
+
   $(etcItem).mouseleave(function () {
     if ($(body).hasClass("pc")) {
       $(this).css("flex-grow", "1");
@@ -28,15 +28,15 @@ $(function () {
       $(this).find(text).removeClass("active");
       $(this).find(viewMore).stop().toggle();
     }
-
   });
 
 
   //슬라이더 페이지네이션
   // 슬라이드가 변할 때마다 바 너비 업데이트
   slider.on('init reInit beforeChange', function (event, slick, currentSlide, nextSlide) {
-
     let curr;
+    let total = slick.slideCount; 
+    let width = (curr / total) * 100; 
 
     if (typeof nextSlide !== 'undefined') {
       curr = nextSlide + 1;
@@ -44,10 +44,9 @@ $(function () {
       curr = 1;
     }
 
-    let total = slick.slideCount; 
-    let width = (curr / total) * 100; 
     bar.css('width', width + '%');
   });
+
 
   //슬라이더
   slider.slick({
@@ -97,23 +96,18 @@ $(function () {
     },
    on: {
       init: function() {
-        // 초기 로드 시 첫 번째 아이템에 active 추가
         newItemList.eq(0).addClass('active');
       },
       slideChange: function() {
-        // 슬라이드가 바뀔 때마다 실행 (자동재생 연동)
+        // 슬라이드가 바뀔 때마다 실행되게
         const activeIndex = this.realIndex;
         
-        // 모든 li에서 active 제거하고 현재 인덱스만 추가
         newItemList.removeClass('active');
         newItemList.eq(activeIndex).addClass('active');
       }
     }
   });
 
-
-
-  // 클릭 시
   newItemList.on('click', function () {
     let idx = $(this).index();
     swiper.slideTo(idx);

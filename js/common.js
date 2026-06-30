@@ -1,6 +1,4 @@
 $(function () {
-  // 1. 변수 선언
-  // var(루트변수) let const
   const body = "body";
   let viewportH, viewportW;
   const gnb = "#canon-gnb";
@@ -26,7 +24,7 @@ $(function () {
   });
 
 
-// 서브메뉴 오픈
+  // 서브메뉴 오픈
   $(mainMenu).mouseenter(function () {
     $(this).find(subMenu).show();
   });
@@ -46,18 +44,17 @@ $(function () {
     $(depth2).removeClass("hover_line");
   });
 
+
   // 푸터 패밀리사이트 오픈
   $(fsBtn).click(function () {
     $(fsList).toggle();
   });
 
 
-
   // 모바일 메뉴 펼치기/접기
   $(smMainMenu).click(function (e) {
-    if ($(body).hasClass("mo")) { //모바일 해상도에서만 실행
-      e.preventDefault(); //<a>의 링크 기능 실행 막기
-      // a의 고유 실행되는것(href)을 막는 문법
+    if ($(body).hasClass("mo")) {
+      e.preventDefault(); 
       $(this).parent().siblings().find(smSubMenu).stop().slideUp(300);
       $(this).next().stop().slideToggle(300);
     }
@@ -90,14 +87,12 @@ $(function () {
   });
 
 
-
   // 사용자 함수
   function rwd() {
     viewportW = window.innerWidth;
     viewportH = window.innerHeight;
-    // console.log(viewportW, viewportH)
-    // if(조건을 충족하면){실행}
-    if (viewportW < 768) { //단위 안 쓰고 절대값 px로 읽음
+
+    if (viewportW < 768) {
       $(body).removeClass("tb pc").addClass("mo");
     } else if (viewportW >= 768 && viewportW < 1280) {
       $(body).removeClass("mo pc").addClass("tb");
@@ -105,9 +100,9 @@ $(function () {
       $(body).removeClass("mo tb").addClass("pc");
     }
     $(siteMap).attr("style", "");
-    // "style 속성을 찾아서 없애버리는 문법"
-    //attribute - 속성으로 a href=""의 a 속성이 href=""인 것
   }
+  
+  
   // 부드러운 스크롤 기본 사용
   const lenis = new Lenis();
   function raf(time) {
@@ -115,6 +110,4 @@ $(function () {
       requestAnimationFrame(raf);
   }
   requestAnimationFrame(raf);  
-
-
 });

@@ -26,8 +26,7 @@
   box-sizing: border-box;
 }
 
-html {
-}
+html {}
 
 body {
   font-size: 16px;
@@ -78,6 +77,7 @@ button {
   cursor: pointer;
 }
 
+
 /* 공용클래스 */
 .wrap {
   /* max-width: 1920px; */
@@ -119,6 +119,7 @@ button {
   font-size: 48px;
 }
 
+
 /* 헤더 */
 #canon-hd {
   position: fixed;
@@ -137,23 +138,15 @@ button {
   padding-bottom: 0.5em;
 }
 
-.logo {
-}
+.logo {}
 
 .logo a {}
 
-.logo img {
-  width: 100px;
-}
+.logo img {width: 100px;}
 
-#canon-gnb {
-  display: none;
-}
+#canon-gnb {display: none;}
 
-.canon-gnb {
-  /* position: relative; */
-  display: flex;
-}
+.canon-gnb {display: flex;}
 
 #canon-gnb:before {
   content: '';
@@ -164,7 +157,6 @@ button {
   height: 0;
   overflow: hidden;
   background-color: #f00;
-  /* transition: 0.3s; */
 }
 
 #canon-gnb.sub-on:before {
@@ -194,8 +186,7 @@ button {
 
 .sub1 {}
 
-.depth2-wrap {
-}
+.depth2-wrap {}
 
 .depth2 {
   display: flex;
@@ -240,10 +231,7 @@ button {
   opacity: 1;
 }
 
-
-.show {
-  display: block;
-}
+.show {display: block;}
 
 .login {}
 
@@ -257,11 +245,7 @@ button {
   align-items: center;
 }
 
-
-
-.search-btn {
-  display: block;
-}
+.search-btn {display: block;}
 
 .search-btn:after {
   content: '\e8b6';
@@ -269,17 +253,14 @@ button {
   font-size: 1.7em;
 }
 
-.login-btn {
-  display: none;
-}
+.login-btn {display: none;}
 
 .sitemap-btn::after {
-  display: block;
   content: '\e3c7';
+  display: block;
   font-size: 2em;
   font-family: var(--google-icon);
 }
-
 
 
 /* 푸터 */
@@ -307,8 +288,7 @@ button {
   padding: 2em 0;
 }
 
-.policy {
-}
+.policy {}
 
 .policy a {
   padding-right: 10px;
@@ -332,14 +312,14 @@ button {
 
 .ft-info dt {}
 
-.ft-info dt:after {
-  content: ' : ';
-}
+.ft-info dt:after {content: ' : ';}
 
 .ft-info dd {}
 
 .copy {}
 
+
+/* 패밀리사이트 */
 .fs-wrap {
   position: absolute;
   top: 20px;
@@ -392,9 +372,7 @@ button {
   gap: 2em;
 }
 
-.sns {
-  text-align: center;
-}
+.sns {text-align: center;}
 
 .company-sns {}
 
@@ -407,13 +385,12 @@ button {
   padding-top: 10px;
 }
 
-.icon a {
-  /* padding-right: 10px; */
-}
+.icon a {}
 
 .icon span {
   transform: scale(1.6);
 }
+
 .line {
   position: absolute;
   left: 0;
@@ -421,6 +398,7 @@ button {
   bottom: 14%;
   border-bottom: 1px solid rgba(26, 19, 17, 0.2);
 }
+
 .public {
   display: flex;
   gap: 10px;
@@ -443,8 +421,7 @@ button {
 }
 
 
-
-/* 모바일 gnb, pc사이트맵 */
+/* 사이트맵 */
 .mo-gnb-sitemap {
   position: fixed;
   top: 0;
@@ -547,14 +524,14 @@ button {
   transition: var(--speed);
 }
 
-  .mo-depth3 {
-    display: none;
-  }
-  
-  .depth3 a:hover {
-    color: var(--point-color);
-    opacity: 1;
-    transition: var(--speed);
+.mo-depth3 {
+  display: none;
+}
+
+.depth3 a:hover {
+  color: var(--point-color);
+  opacity: 1;
+  transition: var(--speed);
 }
 
 .mo-depth1.active>a:after {

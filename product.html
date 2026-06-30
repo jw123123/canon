@@ -16,11 +16,10 @@
   <script src="js/lenis.min.js"></script>
   <script src="js/common.js"></script>
   <script src="js/sub.js"></script>
-
 </head>
 
 <body class="sub0-0 sub">
-  <!-- 1. 상단 헤더 -->
+  <!-- 상단 헤더 -->
   <header id="canon-hd">
     <div class="hd-container wrap">
       <h1 class="logo"><a href="index.html"><img src="images/logo.svg" alt="캐논로고"></a></h1>
@@ -210,11 +209,10 @@
           <button class="sitemap-btn"><span class="blind">사이트맵</button>
         </div>
       </nav>
-
     </div>
   </header>
 
-  <!-- 3. 서브헤더 & 비주얼 -->
+  <!-- 서브헤더 & 비주얼 -->
   <header class="sub-hd">
     <section class="sub-hd-lnb wrap">
       <nav id="canon-lnb">
@@ -365,16 +363,13 @@
           <li><a href="#"><span class="gnb-line">브랜드 소식</span></a></li>
           <li><a href="#"><span class="gnb-line">정품사용 캠페인</span></a></li>
         </ul>
-
       </nav>
     </section>
   </header>
 
-  <!-- 3-1. 메인영역 -->
-
+  <!-- 메인영역 -->
   <div id="product-main" class="wrap">
     <section class="sub-sec product-sec">
-      <!-- section으로 시작하면 h2의 넘버링 다시 시작 가능 -->
       <h2 class="blind">제품</h2>
       <div class="product-container">
         <ul class="card-list">
@@ -550,7 +545,6 @@
         <nav class="pagination-wrapper">
           <ul class="pagination">
             <li class="page-prev"><a href="#">&lt;</a></li>
-
             <li class="page-num active"><a href="#">1</a></li>
             <li class="page-num"><a href="#">2</a></li>
             <li class="page-num"><a href="#">3</a></li>
@@ -562,6 +556,8 @@
       </div>
     </section>
   </div>
+
+  <!-- 푸터 -->
   <footer id="canon-ft">
     <div class="ft-container wrap">
       <h1 class="blind">회사정보</h1>
@@ -639,6 +635,8 @@
       </div>
     </div>
   </footer>
+
+  <!-- 사이트맵 -->
   <div class="mo-gnb-sitemap wh">
     <div class="mo-gnb-top">
       <button class="mo-login-btn"><span>로그인</span></button>
@@ -841,10 +839,13 @@
     </nav>
   </div>
 </body>
-  <script>$('.page-num a').on('click', function(e) {
+
+<script>
+$('.page-num a').on('click', function(e) {
   e.preventDefault();
   $('.page-num').removeClass('active'); 
-  $(this).parent().addClass('active');  
-  
-});</script>
+  $(this).parent().addClass('active');    
+});
+</script>
+
 </html>
