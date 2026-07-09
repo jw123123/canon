@@ -115,8 +115,8 @@ HTML/CSS/JavaScript와 jQuery 기반 퍼블리싱 환경에서 Slick Slider, Len
 
 ### 개선 사항
 
-- 모바일 반응형 지원 강화
-- API 연동을 통한 실시간 데이터 관리
+- 서브 페이지 추가
+- 제품 상세 및 장바구니 담기 기능 추가
 - 제품 비교/추천 기능 고도화
 - 접근성(Accessibility) 개선
 
